@@ -38,7 +38,7 @@ function App() {
         {/* education card */}
         <div className="card">
             <div>
-                <p>Bachelor's of Science (B.S.),</p>
+                <p>Bachelor`&apos;`s of Science (B.S.),</p>
                 <h2>Human Experience Design & Interaction</h2>
                 <h3>Computer Science & Multimedia Emphases</h3>
             </div>
@@ -130,7 +130,7 @@ function App() {
         </div>
     </section>
 
-    {/* digital portfolio */}
+    {/* digital portfolio, HIDDEN FOR NOW */}
     <section className="expanded-cards-section">
         <section>
             <h1>Portfolio</h1>
@@ -159,28 +159,6 @@ function App() {
             </div>
         </section>
     </section>
-
-      {/* <Card></Card> */}
-      {/* <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p> */}
     </>
   )
 }
