@@ -7,13 +7,15 @@
   --border: #E1E8E4;
 }
 
-/* Trendy Color Scheme (not active) */
+/* Dark Mode Color Scheme */
 :root {
-  --dark: #1A1A1A;
-  --tan: #DCC9A9;
-  --red: #B83A2D;
-  --green: #4E6851;
-  --gray: #979797;
+  --background: #121212;
+  --surface: #1E1E1E;
+  --surface-secondary: #2C2C2C;
+  --border: #404040;
+  --text-primary: #FFFFFF;
+  --text-secondary: #A0A0A0;
+  --highlight: #64FFDA; 
 }
 
 h1 {
