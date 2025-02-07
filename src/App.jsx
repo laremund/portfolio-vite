@@ -10,27 +10,31 @@ function App() {
   return (
     <>
     {/* headshot and basic personal info/links */}
-    <section>
-        <div>
-            <div>
-                <div>
+    <header className='header-box'>
+        <div className='personal-info-box-box'>
+            <div className='personal-info-box'>
+                <div className='name-and-role-box'>
+                    {/* For larger views: */}
                     <h1>Hi, my name is Lars Remund</h1>
+                    {/* For smaller views: */}
+                    <h1 className='h1-mobile'>Lars Remund</h1>
                     <h2>Developer, Designer</h2>
+                    
                 </div>
-
-                <div>
-                    <div className="logo"></div>
-                    <div className="logo"></div>
-                    <div className="logo"></div>
-                    <div className="logo"></div>
-                    <div className="logo"></div>
+                {/* Links to accounts */}
+                <div className='account-links'>
+                    <div className="logo-link"></div>
+                    <div className="logo-link"></div>
+                    <div className="logo-link"></div>
+                    <div className="logo-link"></div>
+                    <div className="logo-link"></div>
                 </div>
             </div>
         </div>
-        <div>
+        <div className='headshot-box'>
             {/* image in here, maybe a background behind it? */}
         </div>
-    </section>
+    </header>
 
     {/* education, skills, employment history */}
     <section className="cards-section">
@@ -43,8 +47,10 @@ function App() {
                 <h3>Computer Science & Multimedia Emphases</h3>
             </div>
             <div>
-                <div className="organization-logo-container"></div>
-                <p><em>Utah State University, Logan, UT 84321</em></p>
+                <div className="organization-logo">
+
+                </div>
+                <p><em>Utah State University, Logan, UT</em></p>
             </div>
         </div>
 
@@ -91,11 +97,12 @@ function App() {
                 <p><em>May 2023 - Aug 2023</em></p>
             </div>
             <p>
-                Created website features using languages like React, collaborating closely with an Agile team, to refine interfaces used
-                by 25k+ users that generated $XXm in revenue.
+                Developed React-powered website features for an interface that 
+                served 25k+ users and generated $XXm in revenue.
             </p>
             <p>
-                Regularly shipped new or debugged code to the team repository as part of an Agile scrum team.
+                Regularly shipped new code to a repository as a part of an Agile 
+                team.            
             </p>
         </div>
             
@@ -107,11 +114,16 @@ function App() {
                 <h3>Nerd United</h3>
             </div>
             <div>
-                <p><em></em></p>
-                <p><em></em></p>
+                <p><em>Lehi, UT</em></p>
+                <p><em>May 2023 - Aug 2023</em></p>
             </div>
-            <p></p>
-            <p></p>
+            <p>
+                Automated testing using JavaScript and Python and coordinated 
+                with a scrum team to prepare for product releases.
+            </p>
+            <p>
+                Extensively tested new and existing website features.
+            </p>
         </div>
 
         {/* job card #3 */}
@@ -122,11 +134,17 @@ function App() {
                 <h3>Nerd United</h3>
             </div>
             <div>
-                <p><em></em></p>
-                <p><em></em></p>
+                <p><em>Logan, UT</em></p>
+                <p><em>Mar 2022 - Present</em></p>
             </div>
-            <p></p>
-            <p></p>
+            <p>
+                Managed store website updates and ran the store using Computer 
+                and Electrical Engineering skills.
+            </p>
+            <p>
+                Facilitated labs and research projects with professors and grad 
+                students.
+            </p>
         </div>
     </section>
 
