@@ -87,7 +87,7 @@ function App() {
 
         {/* job card #1 */}
         <div className="card">
-            <h2>Web Dev. Intern</h2>
+            <h2>Front-End Engineering Intern</h2>
             <div className="employment-organization">
                 <div className="organization-logo-container"></div>
                 <h3>Nerd United</h3>
@@ -97,18 +97,18 @@ function App() {
                 <p><em>May 2023 - Aug 2023</em></p>
             </div>
             <p>
-                Developed React-powered website features for an interface that 
-                served 25k+ users and generated $XXm in revenue.
+                Developed and deployed website features (wallet creation, 
+                checkout/cart, payments) for an interface with 25k+ users that 
+                generated $20m+ in revenue.
             </p>
             <p>
-                Regularly shipped new code to a repository as a part of an Agile 
-                team.            
+                Worked in an Agile scrum team - Jira, GitHub, AWS.     
             </p>
         </div>
             
         {/* job card #2 */}
         <div className="card">
-            <h2>Q.A. Intern</h2>
+            <h2>Q.A. Engineering Intern</h2>
             <div className="employment-organization">
                 <div className="organization-logo-container"></div>
                 <h3>Nerd United</h3>
@@ -128,7 +128,7 @@ function App() {
 
         {/* job card #3 */}
         <div className="card">
-            <h2>Lab Rep.</h2>
+            <h2>Lab Representative</h2>
             <div className="employment-organization">
                 <div className="organization-logo-container"></div>
                 <h3>Nerd United</h3>
