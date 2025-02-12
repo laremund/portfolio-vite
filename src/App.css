@@ -1,42 +1,72 @@
 /* --------------- Color Scheme --------------- */
 /* Active Color Scheme */
 :root {
+  /* Regular color scheme */
   --primary-text: #333333;
   --accent: #2E8B57;
   --secondary-text: #666666;
   --secondary-background: #E9E9E9;
-  --border: #E1E8E4;
-}
 
-/* Dark Mode Color Scheme */
-/* :root {
+  /* Dark mode color scheme */
+  --primary-text-dm: #FFFFFF;
+  --secondary-text-dm: #A0A0A0;
+  --accent-dm: #64FFDA;
   --background: #121212;
   --surface: #1E1E1E;
   --surface-secondary: #2C2C2C;
   --border: #404040;
-  --text-primary: #FFFFFF;
-  --text-secondary: #A0A0A0;
-  --highlight: #64FFDA; 
-} */
+}
 
 /* --------------- Font Styles --------------- */
 h1 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  
+  font-family: 'Merriweather', serif;
+  font-weight: 300;
+  font-size: 60px;
+
   color: var(--primary-text);
 }
 
+.h1-mobile {
+  display: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 44px;
+
+  color: var(--accent-dm);
+}
+
 h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+
   color: var(--accent);
 }
 
 h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+
   color: var(--secondary-text);
 }
 
 p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+
   color: var(--primary-text);
 }
 
 /* --------------- Body Containers --------------- */
+body {
+  margin: 0px;
+}
+
 /* in webflow site, this is Section 5 */
 #root {
   margin-left: auto;
@@ -103,6 +133,9 @@ p {
 
   width: 40%;
   max-width: 940px;
+
+  background-image: url(src/assets/images/green-clay-background.jpg);
+  background-size: cover;
 }
 
 .cards-section {
