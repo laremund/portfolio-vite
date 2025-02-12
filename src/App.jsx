@@ -46,9 +46,9 @@ function App() {
                 <h2>Human Experience Design & Interaction</h2>
                 <h3>Computer Science & Multimedia Emphases</h3>
             </div>
-            <div>
+            <div className='school-block'>
                 <div className="organization-logo">
-
+                    
                 </div>
                 <p><em>Utah State University, Logan, UT</em></p>
             </div>
