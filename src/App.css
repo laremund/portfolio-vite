@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 /* --------------- Color Scheme --------------- */
 /* Active Color Scheme */
 :root {
@@ -73,6 +75,12 @@ body {
   margin-right: auto;
   min-width: 320px;
   max-width: 1400px;
+}
+
+/* Mini Game Popup */
+.snake_game_app {
+  position: fixed;
+  width: 100%;
 }
 
 /* --------------- Header Containers --------------- */

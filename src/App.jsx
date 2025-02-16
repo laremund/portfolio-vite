@@ -1,11 +1,11 @@
-// import { useState } from 'react'
+import { useState } from 'react'
 // import Card from './Card'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
+import { SnakeGamePopup } from './components/SnakeGamePopup';
 import './App.css'
 
 function App() {
-  // const [count, setCount] = useState(0)
+
+    const [isGameOpen, setIsGameOpen] = useState(false);
 
   return (
     <>
@@ -177,6 +177,15 @@ function App() {
             </div>
         </section>
     </section>
+
+    <button onClick={() => setIsGameOpen(true)}>
+        Play Snake
+    </button>
+
+    <SnakeGamePopup
+        isOpen={isGameOpen}
+        onClose={() => setIsGameOpen(false)}
+    />
     </>
   )
 }
