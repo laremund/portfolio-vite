@@ -1,11 +1,14 @@
 // import { useState } from 'react'
 // import Card from './Card'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
+import { IconContext, } from "react-icons";
+import { SiJavascript, SiReact, SiHtml5, SiCss3, SiGit, SiTypescript, SiPython, 
+    SiCypress, SiJira, SiFigma, SiWebflow,SiAdobeillustrator, SiAdobeindesign, 
+    SiAdobephotoshop, SiAdobepremierepro, SiGithub, SiLinkedin, SiHandshake, SiPinterest } from "react-icons/si";
+import { FaJava, FaMicrosoft  } from "react-icons/fa";
+import { IoMdMail } from "react-icons/io";
 import './App.css'
 
 function App() {
-  // const [count, setCount] = useState(0)
 
   return (
     <>
@@ -23,11 +26,24 @@ function App() {
                 </div>
                 {/* Links to accounts */}
                 <div className='account-links'>
-                    <div className="logo-link"></div>
-                    <div className="logo-link"></div>
-                    <div className="logo-link"></div>
-                    <div className="logo-link"></div>
-                    <div className="logo-link"></div>
+                    <IconContext.Provider value={{className:"react-icons"}}>
+                        <div className="logo-link">
+                            <SiGithub/>
+                        </div>
+                        <div className="logo-link">
+                            <SiLinkedin/>
+                        </div>
+                        <div className="logo-link">
+                            <IoMdMail/>
+                        </div>
+                        <div className="logo-link">
+                            <SiHandshake/>
+                        </div>
+                        <div className="logo-link">
+                            <SiPinterest/>
+                        </div>
+                    </IconContext.Provider>
+
                 </div>
             </div>
         </div>
@@ -59,29 +75,67 @@ function App() {
 
             {/* development skills */}
             <div className="software-logos-container">
-                <div className="software-logo"></div>
-                <div className="software-logo"></div>
-                <div className="software-logo"></div>
-                <div className="software-logo"></div>
-                <div className="software-logo"></div>
-                <div className="software-logo"></div>
-                <div className="software-logo"></div>
-                <div className="software-logo"></div>
-                <div className="software-logo"></div>
-                <div className="software-logo"></div>
-                <div className="software-logo"></div>
+                <IconContext.Provider value={{className:"react-icons"}}>
+                    <div className="software-logo">
+                        <SiJavascript/>
+                    </div>
+                    <div className="software-logo">
+                        <SiReact/>
+                    </div>
+                    <div className="software-logo">
+                        <SiHtml5/>
+                    </div>
+                    <div className="software-logo">
+                        <SiCss3/>
+                    </div>
+                    <div className="software-logo">
+                        <SiGit/>
+                    </div>
+                    <div className="software-logo">
+                        <SiTypescript/>
+                    </div>
+                    <div className="software-logo">
+                        <SiPython/>
+                    </div>
+                    <div className="software-logo">
+                        <FaJava/>
+                    </div>
+                    <div className="software-logo">
+                        <SiCypress/>
+                    </div>
+                    <div className="software-logo">
+                        <SiJira/>
+                    </div>                    
+                </IconContext.Provider>
+
             </div>
 
             {/* design skills */}
             <div className="software-logos-container">
-                <div className="software-logo"></div>
-                <div className="software-logo"></div>
-                <div className="software-logo"></div>
-                <div className="software-logo"></div>
-                <div className="software-logo"></div>
-                <div className="software-logo"></div>
-                <div className="software-logo"></div>
-                <div className="software-logo"></div>
+                <IconContext.Provider value={{className: "react-icons"}}>
+                    <div className="software-logo">
+                        <SiFigma/>
+                    </div>
+                    <div className="software-logo">
+                        <SiWebflow/>
+                    </div>
+                    <div className="software-logo">
+                        <SiAdobephotoshop/>
+                    </div>
+                    <div className="software-logo">
+                        <SiAdobepremierepro/>
+                    </div>
+                    <div className="software-logo">
+                        <SiAdobeillustrator/>
+                    </div>
+                    <div className="software-logo">
+                        <SiAdobeindesign/>
+                    </div>
+                    <div className="software-logo">
+                        <FaMicrosoft/>
+                    </div>
+                </IconContext.Provider>
+
             </div>
         </div>
 
