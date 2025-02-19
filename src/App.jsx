@@ -1,11 +1,13 @@
 // import { useState } from 'react'
 // import Card from './Card'
+// import LogoLink from './LogoLink';
 import { IconContext, } from "react-icons";
 import { SiJavascript, SiReact, SiHtml5, SiCss3, SiGit, SiTypescript, SiPython, 
     SiCypress, SiJira, SiFigma, SiWebflow,SiAdobeillustrator, SiAdobeindesign, 
     SiAdobephotoshop, SiAdobepremierepro, SiGithub, SiLinkedin, SiHandshake, SiPinterest } from "react-icons/si";
 import { FaJava, FaMicrosoft  } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
+import { NerdIcon, NerdIconDarkMode, UtahStateIcon, UtahStateIconDarkMode } from "./assets/icons/index.js";
 import './App.css'
 
 function App() {
@@ -27,23 +29,22 @@ function App() {
                 {/* Links to accounts */}
                 <div className='account-links'>
                     <IconContext.Provider value={{className:"react-icons"}}>
-                        <div className="logo-link">
+                        <a target="_blank" href="https://github.com/laremund" className="logo-link">
                             <SiGithub/>
-                        </div>
-                        <div className="logo-link">
+                        </a>
+                        <a target="_blank" href="https://www.linkedin.com/in/lars-remund-347a10213/" className="logo-link">
                             <SiLinkedin/>
-                        </div>
-                        <div className="logo-link">
+                        </a>
+                        <a target="_blank" href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=larsgremund@gmail.com" className="logo-link">
                             <IoMdMail/>
-                        </div>
-                        <div className="logo-link">
+                        </a>
+                        <a target="_blank" href="https://usu.joinhandshake.com/profiles/tk3cse" className="logo-link">
                             <SiHandshake/>
-                        </div>
-                        <div className="logo-link">
+                        </a>
+                        <a target="_blank" href="https://www.pinterest.com/larsremund/" className="logo-link">
                             <SiPinterest/>
-                        </div>
+                        </a>
                     </IconContext.Provider>
-
                 </div>
             </div>
         </div>
@@ -64,7 +65,7 @@ function App() {
             </div>
             <div className='school-block'>
                 <div className="organization-logo">
-                    
+                    <UtahStateIcon/>
                 </div>
                 <p><em>Utah State University, Logan, UT</em></p>
             </div>
@@ -143,7 +144,9 @@ function App() {
         <div className="card">
             <h2>Front-End Engineering Intern</h2>
             <div className="employment-organization">
-                <div className="organization-logo-container"></div>
+                <div className="organization-logo-container">
+                    <NerdIcon/>
+                </div>
                 <h3>Nerd United</h3>
             </div>
             <div>
@@ -164,7 +167,9 @@ function App() {
         <div className="card">
             <h2>Q.A. Engineering Intern</h2>
             <div className="employment-organization">
-                <div className="organization-logo-container"></div>
+                <div className="organization-logo-container">
+                    <NerdIcon/>
+                </div>
                 <h3>Nerd United</h3>
             </div>
             <div>
@@ -184,8 +189,10 @@ function App() {
         <div className="card">
             <h2>Lab Representative</h2>
             <div className="employment-organization">
-                <div className="organization-logo-container"></div>
-                <h3>Nerd United</h3>
+                <div className="organization-logo-container">
+                    <UtahStateIcon/>
+                </div>
+                <h3>Utah State University</h3>
             </div>
             <div>
                 <p><em>Logan, UT</em></p>
