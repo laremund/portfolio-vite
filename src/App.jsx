@@ -15,37 +15,37 @@ function App() {
   return (
     <>
     {/* headshot and basic personal info/links */}
-    <header className='header-box'>
-        <div className='personal-info-box-box'>
+    <header className='header-container'>
+        {/* Links to accounts */}
+        <div className='links-section'>
+            <IconContext.Provider value={{className:"react-icons"}}>
+                <a target="_blank" href="https://github.com/laremund" className="logo-link">
+                    <SiGithub/>
+                </a>
+                <a target="_blank" href="https://www.linkedin.com/in/lars-remund-347a10213/" className="logo-link">
+                    <SiLinkedin/>
+                </a>
+                <a target="_blank" href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=larsgremund@gmail.com" className="logo-link">
+                    <IoMdMail/>
+                </a>
+                <a target="_blank" href="https://usu.joinhandshake.com/profiles/tk3cse" className="logo-link">
+                    <SiHandshake/>
+                </a>
+                <a target="_blank" href="https://www.pinterest.com/larsremund/" className="logo-link">
+                    <SiPinterest/>
+                </a>
+            </IconContext.Provider>
+        </div>
+        <div className='intro-headshot-section'>
             <div className='personal-info-box'>
                 <div className='name-and-role-box'>
                     {/* For larger views: */}
                     <h1>Hi, my name is Lars Remund</h1>
                     {/* For smaller views: */}
                     <h1 className='h1-mobile'>Lars Remund</h1>
-                    <h2>Developer, Designer</h2>
-                    
+                    <h2>Developer / Designer</h2>
                 </div>
-                {/* Links to accounts */}
-                <div className='account-links'>
-                    <IconContext.Provider value={{className:"react-icons"}}>
-                        <a target="_blank" href="https://github.com/laremund" className="logo-link">
-                            <SiGithub/>
-                        </a>
-                        <a target="_blank" href="https://www.linkedin.com/in/lars-remund-347a10213/" className="logo-link">
-                            <SiLinkedin/>
-                        </a>
-                        <a target="_blank" href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=larsgremund@gmail.com" className="logo-link">
-                            <IoMdMail/>
-                        </a>
-                        <a target="_blank" href="https://usu.joinhandshake.com/profiles/tk3cse" className="logo-link">
-                            <SiHandshake/>
-                        </a>
-                        <a target="_blank" href="https://www.pinterest.com/larsremund/" className="logo-link">
-                            <SiPinterest/>
-                        </a>
-                    </IconContext.Provider>
-                </div>
+
             </div>
         </div>
         <div className='headshot-box'>
