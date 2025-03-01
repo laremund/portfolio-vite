@@ -70,17 +70,22 @@ p {
 
 /* -| Section 7 */
 
-/* --| header-container */
+/* --| header-section */
 /* ----| links-section */
-/* -----| links-container */
+/* -----| links-box */
 /* ------| Link Block */
-
 /* ----| intro-headshot-section */
-/* -----| heading-container */
+/* -----| heading-box */
 
 /* --| main-grid-section */
-/* ----| resume-container */
-/* ----| placeholder-container */
+/* ----| resume-box */
+/* -----| resume-headers-box */
+/* -----| job-box */
+/* ------| organization-box */
+/* -------| icon-box */
+/* ------| employment-organization-box */
+/* ------| time-place-box */
+/* ----| placeholder-box */
 
 
 
