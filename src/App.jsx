@@ -14,134 +14,65 @@ function App() {
 
   return (
     <>
-    {/* headshot and basic personal info/links */}
-    <header className='header-container'>
+    {/* basic personal info/links and headshot */}
+    <header className='header-section'>
         {/* Links to accounts */}
         <div className='links-section'>
-            <IconContext.Provider value={{className:"react-icons"}}>
-                <a target="_blank" href="https://github.com/laremund" className="logo-link">
-                    <SiGithub/>
-                </a>
-                <a target="_blank" href="https://www.linkedin.com/in/lars-remund-347a10213/" className="logo-link">
-                    <SiLinkedin/>
-                </a>
-                <a target="_blank" href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=larsgremund@gmail.com" className="logo-link">
-                    <IoMdMail/>
-                </a>
-                <a target="_blank" href="https://usu.joinhandshake.com/profiles/tk3cse" className="logo-link">
-                    <SiHandshake/>
-                </a>
-                <a target="_blank" href="https://www.pinterest.com/larsremund/" className="logo-link">
-                    <SiPinterest/>
-                </a>
-            </IconContext.Provider>
+            <div className="links-block">
+                <IconContext.Provider value={{className:"react-icons"}}>
+                    <a target="_blank" href="https://github.com/laremund" className="logo-link">
+                        <SiGithub/>
+                    </a>
+                    <a target="_blank" href="https://www.linkedin.com/in/lars-remund-347a10213/" className="logo-link">
+                        <SiLinkedin/>
+                    </a>
+                    <a target="_blank" href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=larsgremund@gmail.com" className="logo-link">
+                        <IoMdMail/>
+                    </a>
+                    <a target="_blank" href="https://usu.joinhandshake.com/profiles/tk3cse" className="logo-link">
+                        <SiHandshake/>
+                    </a>
+                    <a target="_blank" href="https://www.pinterest.com/larsremund/" className="logo-link">
+                        <SiPinterest/>
+                    </a>
+                </IconContext.Provider>
+            </div>
         </div>
         <div className='intro-headshot-section'>
-            <div className='personal-info-box'>
-                <div className='name-and-role-box'>
-                    {/* For larger views: */}
+            <div className='heading-box'>
                     <h1>Hi, my name is Lars Remund</h1>
-                    {/* For smaller views: */}
-                    <h1 className='h1-mobile'>Lars Remund</h1>
-                    <h2>Developer / Designer</h2>
-                </div>
-
+                    <h2 className="special-h2">Developer / Designer</h2>
             </div>
         </div>
-        <div className='headshot-box'>
+        {/* <div className='headshot-box'> */}
             {/* image in here, maybe a background behind it? */}
-        </div>
+        {/* </div> */}
     </header>
 
-    {/* education, skills, employment history */}
-    <section className="cards-section">
-
-        {/* education card */}
-        <div className="card">
-            <div>
-                <p>Bachelor`&apos;`s of Science (B.S.),</p>
+    <section className="main-grid-section">
+        {/* Resume */}
+        <div className="resume-box">
+            {/* Education */}
+            <div className="resume-headers-box">
+                <h2 className="resume-h2">Education</h2>
+            </div>
+            <div className="job-box">
+                <p>Bachelor's of Science (B.S.),</p>
                 <h2>Human Experience Design & Interaction</h2>
                 <h3>Computer Science & Multimedia Emphases</h3>
-            </div>
-            <div className='school-block'>
-                <div className="organization-logo">
-                    <UtahStateIcon/>
+                <div className='organization-box'>
+                    <div className="icon-box">
+                        <UtahStateIcon/>
+                    </div>
+                    <p><em>Utah State University</em></p>
                 </div>
-                <p><em>Utah State University, Logan, UT</em></p>
             </div>
         </div>
-
-        {/* skills */}
-        <div className="card">
-
-            {/* development skills */}
-            <div className="software-logos-container">
-                <IconContext.Provider value={{className:"react-icons"}}>
-                    <div className="software-logo">
-                        <SiJavascript/>
-                    </div>
-                    <div className="software-logo">
-                        <SiReact/>
-                    </div>
-                    <div className="software-logo">
-                        <SiHtml5/>
-                    </div>
-                    <div className="software-logo">
-                        <SiCss3/>
-                    </div>
-                    <div className="software-logo">
-                        <SiGit/>
-                    </div>
-                    <div className="software-logo">
-                        <SiTypescript/>
-                    </div>
-                    <div className="software-logo">
-                        <SiPython/>
-                    </div>
-                    <div className="software-logo">
-                        <FaJava/>
-                    </div>
-                    <div className="software-logo">
-                        <SiCypress/>
-                    </div>
-                    <div className="software-logo">
-                        <SiJira/>
-                    </div>                    
-                </IconContext.Provider>
-
+            <div className="resume-headers-box">
+                <h2 className="resume-h2">Employment</h2>
             </div>
-
-            {/* design skills */}
-            <div className="software-logos-container">
-                <IconContext.Provider value={{className: "react-icons"}}>
-                    <div className="software-logo">
-                        <SiFigma/>
-                    </div>
-                    <div className="software-logo">
-                        <SiWebflow/>
-                    </div>
-                    <div className="software-logo">
-                        <SiAdobephotoshop/>
-                    </div>
-                    <div className="software-logo">
-                        <SiAdobepremierepro/>
-                    </div>
-                    <div className="software-logo">
-                        <SiAdobeillustrator/>
-                    </div>
-                    <div className="software-logo">
-                        <SiAdobeindesign/>
-                    </div>
-                    <div className="software-logo">
-                        <FaMicrosoft/>
-                    </div>
-                </IconContext.Provider>
-
-            </div>
-        </div>
-
         {/* job card #1 */}
-        <div className="card">
+        <div className="job-box">
             <h2>Front-End Engineering Intern</h2>
             <div className="employment-organization">
                 <div className="organization-logo-container">
@@ -162,7 +93,6 @@ function App() {
                 Worked in an Agile scrum team - Jira, GitHub, AWS.     
             </p>
         </div>
-            
         {/* job card #2 */}
         <div className="card">
             <h2>Q.A. Engineering Intern</h2>
@@ -208,6 +138,73 @@ function App() {
             </p>
         </div>
     </section>
+
+{/* skills section, commented out until design is done */}
+        {/* skills */}
+        {/* <div className="card"> */}
+            {/* development skills */}
+            {/* <div className="software-logos-container">
+                <IconContext.Provider value={{className:"react-icons"}}>
+                    <div className="software-logo">
+                        <SiJavascript/>
+                    </div>
+                    <div className="software-logo">
+                        <SiReact/>
+                    </div>
+                    <div className="software-logo">
+                        <SiHtml5/>
+                    </div>
+                    <div className="software-logo">
+                        <SiCss3/>
+                    </div>
+                    <div className="software-logo">
+                        <SiGit/>
+                    </div>
+                    <div className="software-logo">
+                        <SiTypescript/>
+                    </div>
+                    <div className="software-logo">
+                        <SiPython/>
+                    </div>
+                    <div className="software-logo">
+                        <FaJava/>
+                    </div>
+                    <div className="software-logo">
+                        <SiCypress/>
+                    </div>
+                    <div className="software-logo">
+                        <SiJira/>
+                    </div>                    
+                </IconContext.Provider>
+            </div> */}
+
+            {/* design skills */}
+            {/* <div className="software-logos-container">
+                <IconContext.Provider value={{className: "react-icons"}}>
+                    <div className="software-logo">
+                        <SiFigma/>
+                    </div>
+                    <div className="software-logo">
+                        <SiWebflow/>
+                    </div>
+                    <div className="software-logo">
+                        <SiAdobephotoshop/>
+                    </div>
+                    <div className="software-logo">
+                        <SiAdobepremierepro/>
+                    </div>
+                    <div className="software-logo">
+                        <SiAdobeillustrator/>
+                    </div>
+                    <div className="software-logo">
+                        <SiAdobeindesign/>
+                    </div>
+                    <div className="software-logo">
+                        <FaMicrosoft/>
+                    </div>
+                </IconContext.Provider>
+            </div> */}
+        {/* </div> */}
 
     {/* digital portfolio, HIDDEN FOR NOW */}
     <section className="expanded-cards-section">
