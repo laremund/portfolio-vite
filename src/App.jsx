@@ -66,7 +66,7 @@ function App() {
                     <div className="icon-box">
                         <UtahStateIcon/>
                     </div>
-                    <p><em>Utah State University</em></p>
+                    <p className="special-p">Utah State University</p>
                 </div>
             </div>
 
@@ -84,8 +84,8 @@ function App() {
                     <h3>Nerd United</h3>
                 </div>
                 <div className="place-time-box">
-                    <p><em>Lehi, UT</em></p>
-                    <p><em>May 2023 - Aug 2023</em></p>
+                    <p className="special-p">Lehi, UT</p>
+                    <p className="special-p">May 2023 - Aug 2023</p>
                 </div>
                 <p>
                     Developed and deployed website features (wallet creation, 
@@ -107,8 +107,8 @@ function App() {
                     <h3>Nerd United</h3>
                 </div>
                 <div className="place-time-box">
-                    <p><em>Lehi, UT</em></p>
-                    <p><em>May 2023 - Aug 2023</em></p>
+                    <p className="special-p">Lehi, UT</p>
+                    <p className="special-p">May 2023 - Aug 2023</p>
                 </div>
                 <p>
                     Automated testing using JavaScript and Python and coordinated 
@@ -129,8 +129,8 @@ function App() {
                     <h3>Utah State University</h3>
                 </div>
                 <div className="place-time-box">
-                    <p><em>Logan, UT</em></p>
-                    <p><em>Mar 2022 - Present</em></p>
+                    <p className="special-p">Logan, UT</p>
+                    <p className="special-p">Mar 2022 - Present</p>
                 </div>
                 <p>
                     Managed store website updates and ran the store using Computer 
