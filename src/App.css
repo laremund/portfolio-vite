@@ -168,7 +168,7 @@ body {
   display: grid;
 }
 /* ----| resume-box */
-resume-box {
+.resume-box {
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   background-color: #0000;
@@ -251,3 +251,7 @@ resume-box {
   display: flex;
 }
 
+/* --| expanded-cards-section */
+.expanded-cards-section {
+  display: none;
+}

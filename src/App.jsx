@@ -50,8 +50,10 @@ function App() {
     </header>
 
     <section className="main-grid-section">
+
         {/* Resume */}
         <div className="resume-box">
+
             {/* Education */}
             <div className="resume-headers-box">
                 <h2 className="resume-h2">Education</h2>
@@ -67,75 +69,78 @@ function App() {
                     <p><em>Utah State University</em></p>
                 </div>
             </div>
-        </div>
+
             <div className="resume-headers-box">
                 <h2 className="resume-h2">Employment</h2>
             </div>
-        {/* job card #1 */}
-        <div className="job-box">
-            <h2>Front-End Engineering Intern</h2>
-            <div className="employment-organization">
-                <div className="organization-logo-container">
-                    <NerdIcon/>
-                </div>
-                <h3>Nerd United</h3>
-            </div>
-            <div>
-                <p><em>Lehi, UT</em></p>
-                <p><em>May 2023 - Aug 2023</em></p>
-            </div>
-            <p>
-                Developed and deployed website features (wallet creation, 
-                checkout/cart, payments) for an interface with 25k+ users that 
-                generated $20m+ in revenue.
-            </p>
-            <p>
-                Worked in an Agile scrum team - Jira, GitHub, AWS.     
-            </p>
-        </div>
-        {/* job card #2 */}
-        <div className="card">
-            <h2>Q.A. Engineering Intern</h2>
-            <div className="employment-organization">
-                <div className="organization-logo-container">
-                    <NerdIcon/>
-                </div>
-                <h3>Nerd United</h3>
-            </div>
-            <div>
-                <p><em>Lehi, UT</em></p>
-                <p><em>May 2023 - Aug 2023</em></p>
-            </div>
-            <p>
-                Automated testing using JavaScript and Python and coordinated 
-                with a scrum team to prepare for product releases.
-            </p>
-            <p>
-                Extensively tested new and existing website features.
-            </p>
-        </div>
 
-        {/* job card #3 */}
-        <div className="card">
-            <h2>Lab Representative</h2>
-            <div className="employment-organization">
-                <div className="organization-logo-container">
-                    <UtahStateIcon/>
+            {/* Job #1 */}
+            <div className="job-box">
+                <h2>Front-End Engineering Intern</h2>
+                <div className="employment-organization-box">
+                    <div className="icon-box">
+                        <NerdIcon/>
+                    </div>
+                    <h3>Nerd United</h3>
                 </div>
-                <h3>Utah State University</h3>
+                <div className="place-time-box">
+                    <p><em>Lehi, UT</em></p>
+                    <p><em>May 2023 - Aug 2023</em></p>
+                </div>
+                <p>
+                    Developed and deployed website features (wallet creation, 
+                    checkout/cart, payments) for an interface with 25k+ users that 
+                    generated $20m+ in revenue.
+                </p>
+                <p>
+                    Worked in an Agile scrum team - Jira, GitHub, AWS.     
+                </p>
             </div>
-            <div>
-                <p><em>Logan, UT</em></p>
-                <p><em>Mar 2022 - Present</em></p>
+
+            {/* Job #2 */}
+            <div className="job-box">
+                <h2>Q.A. Engineering Intern</h2>
+                <div className="employment-organization-box">
+                    <div className="icon-box">
+                        <NerdIcon/>
+                    </div>
+                    <h3>Nerd United</h3>
+                </div>
+                <div className="place-time-box">
+                    <p><em>Lehi, UT</em></p>
+                    <p><em>May 2023 - Aug 2023</em></p>
+                </div>
+                <p>
+                    Automated testing using JavaScript and Python and coordinated 
+                    with a scrum team to prepare for product releases.
+                </p>
+                <p>
+                    Extensively tested new and existing website features.
+                </p>
             </div>
-            <p>
-                Managed store website updates and ran the store using Computer 
-                and Electrical Engineering skills.
-            </p>
-            <p>
-                Facilitated labs and research projects with professors and grad 
-                students.
-            </p>
+
+            {/* Job #3 */}
+            <div className="job-box">
+                <h2>Lab Representative</h2>
+                <div className="employment-organization-box">
+                    <div className="icon-box">
+                        <UtahStateIcon/>
+                    </div>
+                    <h3>Utah State University</h3>
+                </div>
+                <div className="place-time-box">
+                    <p><em>Logan, UT</em></p>
+                    <p><em>Mar 2022 - Present</em></p>
+                </div>
+                <p>
+                    Managed store website updates and ran the store using Computer 
+                    and Electrical Engineering skills.
+                </p>
+                <p>
+                    Facilitated labs and research projects with professors and grad 
+                    students.
+                </p>
+            </div>
         </div>
     </section>
 
