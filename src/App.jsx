@@ -14,68 +14,141 @@ function App() {
 
   return (
     <>
-    {/* headshot and basic personal info/links */}
-    <header className='header-box'>
-        <div className='personal-info-box-box'>
-            <div className='personal-info-box'>
-                <div className='name-and-role-box'>
-                    {/* For larger views: */}
-                    <h1>Hi, my name is Lars Remund</h1>
-                    {/* For smaller views: */}
-                    <h1 className='h1-mobile'>Lars Remund</h1>
-                    <h2>Developer, Designer</h2>
-                    
-                </div>
-                {/* Links to accounts */}
-                <div className='account-links'>
-                    <IconContext.Provider value={{className:"react-icons"}}>
-                        <a target="_blank" href="https://github.com/laremund" className="logo-link">
-                            <SiGithub/>
-                        </a>
-                        <a target="_blank" href="https://www.linkedin.com/in/lars-remund-347a10213/" className="logo-link">
-                            <SiLinkedin/>
-                        </a>
-                        <a target="_blank" href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=larsgremund@gmail.com" className="logo-link">
-                            <IoMdMail/>
-                        </a>
-                        <a target="_blank" href="https://usu.joinhandshake.com/profiles/tk3cse" className="logo-link">
-                            <SiHandshake/>
-                        </a>
-                        <a target="_blank" href="https://www.pinterest.com/larsremund/" className="logo-link">
-                            <SiPinterest/>
-                        </a>
-                    </IconContext.Provider>
-                </div>
+    {/* basic personal info/links and headshot */}
+    <header className='header-section'>
+        {/* Links to accounts */}
+        <div className='links-section'>
+            <div className="links-block">
+                <IconContext.Provider value={{className:"react-icons"}}>
+                    <a target="_blank" href="https://github.com/laremund" className="logo-link">
+                        <SiGithub/>
+                    </a>
+                    <a target="_blank" href="https://www.linkedin.com/in/lars-remund-347a10213/" className="logo-link">
+                        <SiLinkedin/>
+                    </a>
+                    <a target="_blank" href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=larsgremund@gmail.com" className="logo-link">
+                        <IoMdMail/>
+                    </a>
+                    <a target="_blank" href="https://usu.joinhandshake.com/profiles/tk3cse" className="logo-link">
+                        <SiHandshake/>
+                    </a>
+                    <a target="_blank" href="https://www.pinterest.com/larsremund/" className="logo-link">
+                        <SiPinterest/>
+                    </a>
+                </IconContext.Provider>
             </div>
         </div>
-        <div className='headshot-box'>
-            {/* image in here, maybe a background behind it? */}
+        <div className='intro-headshot-section'>
+            <div className='heading-box'>
+                    <h1>Hi, my name is Lars Remund</h1>
+                    <h2 className="special-h2">Developer / Designer</h2>
+            </div>
         </div>
+        {/* <div className='headshot-box'> */}
+            {/* image in here, maybe a background behind it? */}
+        {/* </div> */}
     </header>
 
-    {/* education, skills, employment history */}
-    <section className="cards-section">
+    <section className="main-grid-section">
 
-        {/* education card */}
-        <div className="card">
-            <div>
-                <p>Bachelor`&apos;`s of Science (B.S.),</p>
+        {/* Resume */}
+        <div className="resume-box">
+
+            {/* Education */}
+            <div className="resume-headers-box">
+                <h2 className="resume-h2">Education</h2>
+            </div>
+            <div className="job-box">
+                <p>Bachelor's of Science (B.S.),</p>
                 <h2>Human Experience Design & Interaction</h2>
                 <h3>Computer Science & Multimedia Emphases</h3>
-            </div>
-            <div className='school-block'>
-                <div className="organization-logo">
-                    <UtahStateIcon/>
+                <div className='organization-box'>
+                    <div className="icon-box">
+                        <UtahStateIcon/>
+                    </div>
+                    <p className="special-p">Utah State University</p>
                 </div>
-                <p><em>Utah State University, Logan, UT</em></p>
+            </div>
+
+            <div className="resume-headers-box">
+                <h2 className="resume-h2">Employment</h2>
+            </div>
+
+            {/* Job #1 */}
+            <div className="job-box">
+                <h2>Front-End Engineering Intern</h2>
+                <div className="employment-organization-box">
+                    <div className="icon-box">
+                        <NerdIcon/>
+                    </div>
+                    <h3>Nerd United</h3>
+                </div>
+                <div className="place-time-box">
+                    <p className="special-p">Lehi, UT</p>
+                    <p className="special-p">May 2023 - Aug 2023</p>
+                </div>
+                <p>
+                    Developed and deployed website features (wallet creation, 
+                    checkout/cart, payments) for an interface with 25k+ users that 
+                    generated $20m+ in revenue.
+                </p>
+                <p>
+                    Worked in an Agile scrum team - Jira, GitHub, AWS.     
+                </p>
+            </div>
+
+            {/* Job #2 */}
+            <div className="job-box">
+                <h2>Q.A. Engineering Intern</h2>
+                <div className="employment-organization-box">
+                    <div className="icon-box">
+                        <NerdIcon/>
+                    </div>
+                    <h3>Nerd United</h3>
+                </div>
+                <div className="place-time-box">
+                    <p className="special-p">Lehi, UT</p>
+                    <p className="special-p">May 2023 - Aug 2023</p>
+                </div>
+                <p>
+                    Automated testing using JavaScript and Python and coordinated 
+                    with a scrum team to prepare for product releases.
+                </p>
+                <p>
+                    Extensively tested new and existing website features.
+                </p>
+            </div>
+
+            {/* Job #3 */}
+            <div className="job-box">
+                <h2>Lab Representative</h2>
+                <div className="employment-organization-box">
+                    <div className="icon-box">
+                        <UtahStateIcon/>
+                    </div>
+                    <h3>Utah State University</h3>
+                </div>
+                <div className="place-time-box">
+                    <p className="special-p">Logan, UT</p>
+                    <p className="special-p">Mar 2022 - Present</p>
+                </div>
+                <p>
+                    Managed store website updates and ran the store using Computer 
+                    and Electrical Engineering skills.
+                </p>
+                <p>
+                    Facilitated labs and research projects with professors and grad 
+                    students.
+                </p>
             </div>
         </div>
+    </section>
 
+{/* skills section, commented out until design is done */}
         {/* skills */}
-        <div className="card">
-
+        {/* <div className="card"> */}
             {/* development skills */}
-            <div className="software-logos-container">
+            {/* <div className="software-logos-container">
                 <IconContext.Provider value={{className:"react-icons"}}>
                     <div className="software-logo">
                         <SiJavascript/>
@@ -108,11 +181,10 @@ function App() {
                         <SiJira/>
                     </div>                    
                 </IconContext.Provider>
-
-            </div>
+            </div> */}
 
             {/* design skills */}
-            <div className="software-logos-container">
+            {/* <div className="software-logos-container">
                 <IconContext.Provider value={{className: "react-icons"}}>
                     <div className="software-logo">
                         <SiFigma/>
@@ -136,78 +208,8 @@ function App() {
                         <FaMicrosoft/>
                     </div>
                 </IconContext.Provider>
-
-            </div>
-        </div>
-
-        {/* job card #1 */}
-        <div className="card">
-            <h2>Front-End Engineering Intern</h2>
-            <div className="employment-organization">
-                <div className="organization-logo-container">
-                    <NerdIcon/>
-                </div>
-                <h3>Nerd United</h3>
-            </div>
-            <div>
-                <p><em>Lehi, UT</em></p>
-                <p><em>May 2023 - Aug 2023</em></p>
-            </div>
-            <p>
-                Developed and deployed website features (wallet creation, 
-                checkout/cart, payments) for an interface with 25k+ users that 
-                generated $20m+ in revenue.
-            </p>
-            <p>
-                Worked in an Agile scrum team - Jira, GitHub, AWS.     
-            </p>
-        </div>
-            
-        {/* job card #2 */}
-        <div className="card">
-            <h2>Q.A. Engineering Intern</h2>
-            <div className="employment-organization">
-                <div className="organization-logo-container">
-                    <NerdIcon/>
-                </div>
-                <h3>Nerd United</h3>
-            </div>
-            <div>
-                <p><em>Lehi, UT</em></p>
-                <p><em>May 2023 - Aug 2023</em></p>
-            </div>
-            <p>
-                Automated testing using JavaScript and Python and coordinated 
-                with a scrum team to prepare for product releases.
-            </p>
-            <p>
-                Extensively tested new and existing website features.
-            </p>
-        </div>
-
-        {/* job card #3 */}
-        <div className="card">
-            <h2>Lab Representative</h2>
-            <div className="employment-organization">
-                <div className="organization-logo-container">
-                    <UtahStateIcon/>
-                </div>
-                <h3>Utah State University</h3>
-            </div>
-            <div>
-                <p><em>Logan, UT</em></p>
-                <p><em>Mar 2022 - Present</em></p>
-            </div>
-            <p>
-                Managed store website updates and ran the store using Computer 
-                and Electrical Engineering skills.
-            </p>
-            <p>
-                Facilitated labs and research projects with professors and grad 
-                students.
-            </p>
-        </div>
-    </section>
+            </div> */}
+        {/* </div> */}
 
     {/* digital portfolio, HIDDEN FOR NOW */}
     <section className="expanded-cards-section">
