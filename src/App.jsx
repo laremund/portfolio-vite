@@ -7,7 +7,7 @@ import { SiJavascript, SiReact, SiHtml5, SiCss3, SiGit, SiTypescript, SiPython,
     SiAdobephotoshop, SiAdobepremierepro, SiGithub, SiLinkedin, SiHandshake, SiPinterest } from "react-icons/si";
 import { FaJava, FaMicrosoft  } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
-import { NerdIcon, NerdIconDarkMode, UtahStateIcon, UtahStateIconDarkMode } from "./assets/icons/index.js";
+import { NerdIcon, UtahStateIcon } from "./assets/icons/index.js";
 import './App.css'
 
 function App() {
@@ -18,21 +18,21 @@ function App() {
     <header className='header-section'>
         {/* Links to accounts */}
         <div className='links-section'>
-            <div className="links-block">
+            <div className="links-box">
                 <IconContext.Provider value={{className:"react-icons"}}>
-                    <a target="_blank" href="https://github.com/laremund" className="logo-link">
+                    <a target="_blank" href="https://github.com/laremund" className="link-icon-box">
                         <SiGithub/>
                     </a>
-                    <a target="_blank" href="https://www.linkedin.com/in/lars-remund-347a10213/" className="logo-link">
+                    <a target="_blank" href="https://www.linkedin.com/in/lars-remund-347a10213/" className="link-icon-box">
                         <SiLinkedin/>
                     </a>
-                    <a target="_blank" href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=larsgremund@gmail.com" className="logo-link">
+                    <a target="_blank" href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=larsgremund@gmail.com" className="link-icon-box">
                         <IoMdMail/>
                     </a>
-                    <a target="_blank" href="https://usu.joinhandshake.com/profiles/tk3cse" className="logo-link">
+                    <a target="_blank" href="https://usu.joinhandshake.com/profiles/tk3cse" className="link-icon-box">
                         <SiHandshake/>
                     </a>
-                    <a target="_blank" href="https://www.pinterest.com/larsremund/" className="logo-link">
+                    <a target="_blank" href="https://www.pinterest.com/larsremund/" className="link-icon-box">
                         <SiPinterest/>
                     </a>
                 </IconContext.Provider>
@@ -40,7 +40,7 @@ function App() {
         </div>
         <div className='intro-headshot-section'>
             <div className='heading-box'>
-                    <h1>Hi, my name is Lars Remund</h1>
+                    <h1>Hi, my name is <b className="bold-h1">Lars Remund</b></h1>
                     <h2 className="special-h2">Developer / Designer</h2>
             </div>
         </div>
@@ -53,7 +53,6 @@ function App() {
 
         {/* Resume */}
         <div className="resume-box">
-
             {/* Education */}
             <div className="resume-headers-box">
                 <h2 className="resume-h2">Education</h2>
