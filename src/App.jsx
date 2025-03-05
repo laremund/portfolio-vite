@@ -40,7 +40,7 @@ function App() {
         </div>
         <div className='intro-headshot-section'>
             <div className='heading-box'>
-                    <h1>Hi, my name is <b className="bold-h1">Lars Remund</b></h1>
+                    <h1>Hi, my name is <span className="bold-h1">Lars Remund</span></h1>
                     <h2 className="special-h2">Developer / Designer</h2>
             </div>
         </div>
@@ -141,6 +141,15 @@ function App() {
                 </p>
             </div>
         </div>
+        <div className="placeholder-box">
+            <h2>Github here</h2>
+        </div>
+
+        {/* Github contributions chart component from a guy on reddit, doesn't look
+        great with my current design */}
+        {/* <div className="placeholder-box">
+            <img src="https://ghchart.rshah.org/laremund" alt="" />
+        </div> */}
     </section>
 
 {/* skills section, commented out until design is done */}
