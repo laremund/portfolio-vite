@@ -142,8 +142,14 @@ function App() {
             </div>
         </div>
         <div className="placeholder-box">
-            <img src="https://ghchart.rshah.org/laremund" alt="" />
+            <h2>Github here</h2>
         </div>
+
+        {/* Github contributions chart component from a guy on reddit, doesn't look
+        great with my current design */}
+        {/* <div className="placeholder-box">
+            <img src="https://ghchart.rshah.org/laremund" alt="" />
+        </div> */}
     </section>
 
 {/* skills section, commented out until design is done */}
