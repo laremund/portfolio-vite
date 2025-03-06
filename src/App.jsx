@@ -1,6 +1,6 @@
 // import { useState } from 'react'
-// import Card from './Card'
-// import LogoLink from './LogoLink';
+import LightboxSlideshow from "./assets/components/LightboxSlideshow.jsx";
+import { checklistAppImage, spotifyAppImage, toPleaseYouImage } from "./assets/images/index.js";
 import { IconContext, } from "react-icons";
 import { SiJavascript, SiReact, SiHtml5, SiCss3, SiGit, SiTypescript, SiPython, 
     SiCypress, SiJira, SiFigma, SiWebflow,SiAdobeillustrator, SiAdobeindesign, 
@@ -12,6 +12,23 @@ import './App.css'
 
 function App() {
 
+    const projectsSlides = [
+        {
+            title: "To-Do Scheduling App",
+            imageUrl: checklistAppImage,
+            description: "For ultra-planner ADHD folks, v0 & TypeScript practice"
+        },
+        {
+            title: "Fix-Spotify App",
+            imageUrl: spotifyAppImage,
+            description: "Unfamiliar API + bolt + crossed fingers = clout?"
+        },
+        {
+            title: "This site",
+            imageUrl: toPleaseYouImage,
+            description: "Trying to make this thing more fun"
+        }
+    ];
   return (
     <>
     {/* basic personal info/links and headshot */}
@@ -142,9 +159,8 @@ function App() {
             </div>
         </div>
         <div className="placeholder-box">
-            <h2>Github here</h2>
+            <LightboxSlideshow slides={projectsSlides}/>
         </div>
-
         {/* Github contributions chart component from a guy on reddit, doesn't look
         great with my current design */}
         {/* <div className="placeholder-box">
