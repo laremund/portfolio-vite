@@ -16,12 +16,12 @@ function App() {
         {
             title: "To-Do Scheduling App",
             imageUrl: checklistAppImage,
-            description: "For ultra-planner ADHD folks, v0 & TypeScript practice"
+            description: "For ultra-planner ADHD folks, v0 practice"
         },
         {
             title: "Fix-Spotify App",
             imageUrl: spotifyAppImage,
-            description: "Unfamiliar API + bolt + crossed fingers = clout?"
+            description: "Unfamiliar API + TypeScript + crossed fingers"
         },
         {
             title: "This site",
@@ -57,7 +57,10 @@ function App() {
         </div>
         <div className='intro-headshot-section'>
             <div className='heading-box'>
-                    <h1>Hi, my name is <span className="bold-h1">Lars Remund</span></h1>
+                    <h1 className="desktop-h1">Hi, my name is <span className="bold-h1">Lars Remund</span></h1>
+                    <h1 className="mobile-h1">
+                        Hi, my name is <br/><span className="bold-h1">Lars Remund</span>
+                    </h1>
                     <h2 className="special-h2">Developer / Designer</h2>
             </div>
         </div>
@@ -159,6 +162,9 @@ function App() {
             </div>
         </div>
         <div className="placeholder-box">
+            <div className="section-headers-box">
+                <h2 className="resume-h2">Current Projects:</h2>
+            </div>
             <LightboxSlideshow slides={projectsSlides}/>
         </div>
         {/* Github contributions chart component from a guy on reddit, doesn't look
