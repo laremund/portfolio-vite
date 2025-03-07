@@ -57,7 +57,10 @@ function App() {
         </div>
         <div className='intro-headshot-section'>
             <div className='heading-box'>
-                    <h1>Hi, my name is <span className="bold-h1">Lars Remund</span></h1>
+                    <h1 className="desktop-h1">Hi, my name is <span className="bold-h1">Lars Remund</span></h1>
+                    <h1 className="mobile-h1">
+                        Hi, my name is <br/><span className="bold-h1">Lars Remund</span>
+                    </h1>
                     <h2 className="special-h2">Developer / Designer</h2>
             </div>
         </div>
