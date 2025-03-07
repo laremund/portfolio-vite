@@ -43,7 +43,7 @@ function App() {
                     <a target="_blank" href="https://www.linkedin.com/in/lars-remund-347a10213/" className="link-icon-box">
                         <SiLinkedin/>
                     </a>
-                    <a target="_blank" href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=larsgremund@gmail.com" className="link-icon-box">
+                    <a target="_blank" href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=larsremund2@gmail.com" className="link-icon-box">
                         <IoMdMail/>
                     </a>
                     <a target="_blank" href="https://usu.joinhandshake.com/profiles/tk3cse" className="link-icon-box">
