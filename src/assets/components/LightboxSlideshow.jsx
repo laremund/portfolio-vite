@@ -43,7 +43,7 @@ function LightboxSlideshow ({ slides = [] }) {
   
   return (
     <div className="lightbox-container">
-        <h2 className="lightbox-title">{currentSlide.title}</h2>
+      <h2 className="lightbox-title">{currentSlide.title}</h2>
 
         {/* Navigation - Left */}
       <div className="lightbox-nav-left">
