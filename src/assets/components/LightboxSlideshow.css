@@ -1,7 +1,6 @@
 /* Main container */
 .lightbox-container {
     position: relative;
-    background-color: white;
     border-radius: 0.5rem;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
     overflow: hidden;
@@ -15,19 +14,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #f3f4f6;
+    background-color: var(--secondary-text);
     height: 16rem;
     width: 100%;
     border-radius: 0.5rem;
 }
 
 .lightbox-empty-text {
-    color: #6b7280;
+    color: var(--border);
 }
 
 /* Content area */
 .lightbox-content {
     padding: 1.5rem;
+    position: inherit;
 }
 
 /* Title styling */
@@ -51,9 +51,9 @@
 }
 
 /* Description text */
-.lightbox-description {
+/* .lightbox-description {
     color: #374151;
-}
+} */
 
 /* Left navigation */
 .lightbox-nav-left {
@@ -87,7 +87,7 @@
 }
 
 .lightbox-nav-button:hover {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: var(--surface-secondary);
 }
 
 /* Arrow icons */
@@ -115,10 +115,10 @@
     height: 0.5rem;
     width: 0.5rem;
     border-radius: 9999px;
-    background-color: #d1d5db;
+    background-color: var(--border);
 }
 
 /* Active indicator */
 .lightbox-indicator-active {
-    background-color: #3b82f6;
+    background-color: var(--accent);
 }
