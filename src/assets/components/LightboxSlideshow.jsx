@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import './LightboxSlideshow.css';
+import '../../App.css';
 
 function LightboxSlideshow ({ slides = [] }) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -43,7 +44,7 @@ function LightboxSlideshow ({ slides = [] }) {
   
   return (
     <div className="lightbox-container">
-      <h2 className="lightbox-title">{currentSlide.title}</h2>
+      <h3 className="lightbox-title">{currentSlide.title}</h3>
 
         {/* Navigation - Left */}
       <div className="lightbox-nav-left">

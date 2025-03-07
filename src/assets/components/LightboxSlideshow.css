@@ -33,15 +33,12 @@
 
 /* Content area */
 .lightbox-content {
-    /* padding: 1.5rem; */
     position: inherit;
 }
 
 /* Title styling */
 .lightbox-title {
-    font-size: 1.25rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
+    margin: 0px 0px 10px 0px;
 }
 
 /* Image container */
@@ -55,8 +52,8 @@
 
 /* Image styling */
 .lightbox-image {
-    /* max-height: 16rem; */
-    /* object-fit: cover; */
+    border: 1px solid transparent;
+    border-radius: 15px;
 }
 
 /* Description text */
@@ -99,6 +96,10 @@
 
 .lightbox-nav-button:hover {
     background-color: var(--surface-secondary);
+}
+
+.lightbox-nav-button:active {
+    background-color: var(--accent);
 }
 
 /* Arrow icons */
