@@ -1,4 +1,3 @@
-// import { useState } from 'react'
 import LightboxSlideshow from "./assets/components/LightboxSlideshow.jsx";
 import { checklistAppImage, spotifyAppImage, toPleaseYouImage } from "./assets/images/index.js";
 import { IconContext, } from "react-icons";
