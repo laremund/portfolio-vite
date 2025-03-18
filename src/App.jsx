@@ -1,5 +1,5 @@
 import LightboxSlideshow from "./assets/components/LightboxSlideshow.jsx";
-import { checklistAppImage, spotifyAppImage, toPleaseYouImage } from "./assets/images/index.js";
+import { checklistAppImage, spotifyAppImage, myResumeSite } from "./assets/images/index.js";
 import { IconContext, } from "react-icons";
 import { SiJavascript, SiReact, SiHtml5, SiCss3, SiGit, SiTypescript, SiPython, 
     SiCypress, SiJira, SiFigma, SiWebflow,SiAdobeillustrator, SiAdobeindesign, 
@@ -24,8 +24,8 @@ function App() {
         },
         {
             title: "This site",
-            imageUrl: toPleaseYouImage,
-            description: "Trying to make this thing more fun"
+            imageUrl: myResumeSite,
+            description: "Hey just working - working hard so I can please you"
         }
     ];
   return (
