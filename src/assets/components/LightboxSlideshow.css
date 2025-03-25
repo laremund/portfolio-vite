@@ -54,6 +54,7 @@
 .lightbox-image {
     border: 1px solid transparent;
     border-radius: 15px;
+    overflow: clip clip;
 }
 
 /* Description text */
