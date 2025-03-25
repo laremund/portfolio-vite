@@ -1,5 +1,5 @@
 import LightboxSlideshow from "./assets/components/LightboxSlideshow.jsx";
-import { checklistAppImage, spotifyAppImage, myResumeSite } from "./assets/images/index.js";
+import { checklistAppImage, spotifyAppImage, myResumeSite, philosophySite } from "./assets/images/index.js";
 import { IconContext, } from "react-icons";
 import { SiJavascript, SiReact, SiHtml5, SiCss3, SiGit, SiTypescript, SiPython, 
     SiCypress, SiJira, SiFigma, SiWebflow,SiAdobeillustrator, SiAdobeindesign, 
@@ -21,6 +21,11 @@ function App() {
             title: "Fix-Spotify App",
             imageUrl: spotifyAppImage,
             description: "Unfamiliar API + TypeScript + crossed fingers"
+        },
+        {
+            title: "Kierkegaard's Corner",
+            imageUrl: philosophySite,
+            description: "Using pop culture to break down modern philosophy"
         },
         {
             title: "This site",
