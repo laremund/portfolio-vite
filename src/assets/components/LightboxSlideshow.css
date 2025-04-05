@@ -66,8 +66,12 @@
 }
 
 /* Description text */
-/* .lightbox-description {
-} */
+.lightbox-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
 
 /* Left navigation */
 .lightbox-nav-left {
