@@ -1,5 +1,5 @@
 import LightboxSlideshow from "./assets/components/LightboxSlideshow.jsx";
-import { checklistAppImage, spotifyAppImage, myResumeSite, philosophySite } from "./assets/images/index.js";
+import { checklistAppImage, spotifyAppImage, myResumeSite, philosophySite, artShareLA, jjkKillBill } from "./assets/images/index.js";
 import { IconContext, } from "react-icons";
 import { SiJavascript, SiReact, SiHtml5, SiCss3, SiGit, SiTypescript, SiPython, 
     SiCypress, SiJira, SiFigma, SiWebflow,SiAdobeillustrator, SiAdobeindesign, 
@@ -11,7 +11,7 @@ import './App.css'
 
 function App() {
 
-    const projectsSlides = [
+    const currentProjectsSlides = [
         {
             title: "To-Do Scheduling App",
             imageUrl: checklistAppImage,
@@ -30,7 +30,29 @@ function App() {
         {
             title: "This site",
             imageUrl: myResumeSite,
-            description: "Hey just working - working hard so I can please you"
+            description: "Updating this thing"
+        }
+    ];
+    const projectsSlides = [
+        {
+            title: "Art Share LA Series",
+            imageUrl: artShareLA,
+            description: "Project for a class, shown is a page from my process book"
+        },
+        // {
+        //     title: "Fix-Spotify App",
+        //     imageUrl: spotifyAppImage,
+        //     description: "Unfamiliar API + TypeScript + crossed fingers"
+        // },
+        // {
+        //     title: "Kierkegaard's Corner",
+        //     imageUrl: philosophySite,
+        //     description: "Using pop culture to break down modern philosophy"
+        // },
+        {
+            title: "Jujutsu Kaisen X Kill Bill",
+            imageUrl: jjkKillBill,
+            description: "Jujutsu Kaisen poster inspired by Kill Bill"
         }
     ];
   return (
@@ -167,7 +189,13 @@ function App() {
         </div>
         <div className="placeholder-box">
             <div className="section-headers-box">
-                <h2 className="resume-h2">Current Projects:</h2>
+                <h2 className="resume-h2">In-Progress Projects:</h2>
+            </div>
+            <LightboxSlideshow slides={currentProjectsSlides}/>
+        </div>
+        <div className="placeholder-box">
+            <div className="section-headers-box">
+                <h2 className="resume-h2">Recent Projects</h2>
             </div>
             <LightboxSlideshow slides={projectsSlides}/>
         </div>

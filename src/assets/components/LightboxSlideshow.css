@@ -10,7 +10,7 @@
 /*Box Model*/
     width: 100%;
     border-radius: 0.5rem;
-/*Miscellaneous*/
+/*Misc*/
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
@@ -33,7 +33,8 @@
 
 /* Content area */
 .lightbox-content {
-    position: inherit;
+    width: fit-content;
+    /* position: inherit; */
 }
 
 /* Title styling */
@@ -46,19 +47,22 @@
 /*Display*/
     display: flex;
     justify-content: center;
+    /* align-items: center; */
 /*Box Model*/
-    width: 400px;
-    height: 350px;
+    max-width: 400px;
+    min-width: 340px;
+    height: 340px;
     margin-bottom: 1rem;
 }
 
 /* Image styling */
 .lightbox-image {
 /*Box Model*/
-    border: 1px solid transparent;
+    width: min-content;
+    /* border: 1px solid transparent; */
     border-radius: 15px;
-/*Miscellaneous*/
-    overflow: clip clip;
+/*Misc*/
+    /* overflow: clip clip; */
 }
 
 /* Description text */
@@ -101,7 +105,7 @@
     background-color: rgba(0, 0, 0, 0.3);
 /*Typography*/
     color: white;
-/*Miscellaneous*/
+/*Misc*/
     cursor: pointer;
 }
 
@@ -133,7 +137,7 @@
     justify-content: center;
 /*Box Model*/
     margin-top: 10px;
-/*Miscellaneous*/
+/*Misc*/
     gap: 0.5rem;
 }
 
