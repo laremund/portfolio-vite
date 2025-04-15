@@ -37,22 +37,12 @@ function App() {
         {
             title: "Art Share LA Series",
             imageUrl: artShareLA,
-            description: "Project for a class, shown is a page from my process book"
+            description: "Class project, shown is a page from my process book"
         },
-        // {
-        //     title: "Fix-Spotify App",
-        //     imageUrl: spotifyAppImage,
-        //     description: "Unfamiliar API + TypeScript + crossed fingers"
-        // },
-        // {
-        //     title: "Kierkegaard's Corner",
-        //     imageUrl: philosophySite,
-        //     description: "Using pop culture to break down modern philosophy"
-        // },
         {
-            title: "Jujutsu Kaisen X Kill Bill",
+            title: "Kill Bill X Jujutsu Kaisen",
             imageUrl: jjkKillBill,
-            description: "Jujutsu Kaisen poster inspired by Kill Bill"
+            description: "A little personal project of mine"
         }
     ];
   return (
