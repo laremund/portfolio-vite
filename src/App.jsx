@@ -47,22 +47,22 @@ function App() {
         {
             title: "Final Project for ITLS-4225",
             imageUrl: brainstormApp1,
-            description: "Brainstorming / Storyboarding app"
+            description: "Final Project for ITLS-4225"
         },
         {
             title: "Final Project for ITLS-4225",
             imageUrl: brainstormApp2,
-            description: "Brainstorming / Storyboarding app"
+            description: "Final Project for ITLS-4225"
         },
         {
             title: "Final Project for ITLS-4225",
             imageUrl: brainstormApp3,
-            description: "Brainstorming / Storyboarding app"
+            description: "Final Project for ITLS-4225"
         },
         {
             title: "Final Project for ITLS-4225",
             imageUrl: brainstormApp4,
-            description: "Brainstorming / Storyboarding app"
+            description: "Final Project for ITLS-4225"
         }
     ];
 
@@ -88,29 +88,29 @@ function App() {
         {
             title: "To-Do Scheduling App",
             imageUrl: checklistAppImage,
-            description: "For ultra-planner ADHD folks, v0 practice"
+            description: "To-Do Scheduling App"
         },
         {
             title: "Fix-Spotify App",
             imageUrl: spotifyAppImage,
-            description: "Unfamiliar API + TypeScript + crossed fingers"
+            description: "Fix-Spotify App"
         },
         {
             title: "Kierkegaard's Corner",
             imageUrl: philosophySite,
-            description: "Using pop culture to break down modern philosophy"
+            description: "Kierkegaard's Corner"
         }
     ];
     const projectsSlides = [
         {
             title: "Art Share LA Series",
             imageUrl: artShareLA,
-            description: "Class project, shown is a page from my process book"
+            description: "Art Share LA Series - Class Project"
         },
         {
             title: "Kill Bill X Jujutsu Kaisen",
             imageUrl: jjkKillBill,
-            description: "A little personal project"
+            description: "Kill Bill X Jujutsu Kaisen"
         }
     ];
   return (
