@@ -1,15 +1,88 @@
 import LightboxSlideshow from "./assets/components/LightboxSlideshow.jsx";
-import { checklistAppImage, spotifyAppImage, myResumeSite, philosophySite, artShareLA, jjkKillBill } from "./assets/images/index.js";
+import {    
+            brainstormApp1, brainstormApp2, brainstormApp3, brainstormApp4, 
+            canvasRedesign1, canvasRedesign2, canvasRedesign3, canvasRedesign4,
+            portfolioSite1, portfolioSite2, portfolioSite3,
+            checklistAppImage, spotifyAppImage, philosophySite, artShareLA, 
+            jjkKillBill
+        } from "./assets/images/index.js";
 import { IconContext, } from "react-icons";
-import { SiJavascript, SiReact, SiHtml5, SiCss3, SiGit, SiTypescript, SiPython, 
-    SiCypress, SiJira, SiFigma, SiWebflow,SiAdobeillustrator, SiAdobeindesign, 
-    SiAdobephotoshop, SiAdobepremierepro, SiGithub, SiLinkedin, SiHandshake, SiPinterest } from "react-icons/si";
-import { FaJava, FaMicrosoft  } from "react-icons/fa";
+import { 
+            SiJavascript, SiReact, SiHtml5, SiCss3, SiGit, SiTypescript, SiPython, 
+            SiCypress, SiJira, SiFigma, SiWebflow,SiAdobeillustrator, SiAdobeindesign, 
+            SiAdobephotoshop, SiAdobepremierepro, SiGithub, SiLinkedin, SiHandshake, 
+            SiPinterest
+        } from "react-icons/si";
+// import { FaJava, FaMicrosoft  } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 import { NerdIcon, UtahStateIcon } from "./assets/icons/index.js";
-import './App.css'
+import './App.css';
 
 function App() {
+
+    const canvasRedesign = [
+        {
+            title: "Canvas Messaging Redesign",
+            imageUrl: canvasRedesign1,
+            description: "Group project improving UX of an app"
+        },
+        {
+            title: "Canvas Messaging Redesign",
+            imageUrl: canvasRedesign2,
+            description: "Group project improving UX of an app"
+        },
+        {
+            title: "Canvas Messaging Redesign",
+            imageUrl: canvasRedesign3,
+            description: "Group project improving UX of an app"
+        },
+        {
+            title: "Canvas Messaging Redesign",
+            imageUrl: canvasRedesign4,
+            description: "Group project improving UX of an app"
+        }
+    ];
+
+    const brainstormApp = [
+        {
+            title: "Final Project for ITLS-4225",
+            imageUrl: brainstormApp1,
+            description: "Brainstorming / Storyboarding app"
+        },
+        {
+            title: "Final Project for ITLS-4225",
+            imageUrl: brainstormApp2,
+            description: "Brainstorming / Storyboarding app"
+        },
+        {
+            title: "Final Project for ITLS-4225",
+            imageUrl: brainstormApp3,
+            description: "Brainstorming / Storyboarding app"
+        },
+        {
+            title: "Final Project for ITLS-4225",
+            imageUrl: brainstormApp4,
+            description: "Brainstorming / Storyboarding app"
+        }
+    ];
+
+    const portfolioSite = [
+        {
+            title: "This Site",
+            imageUrl: portfolioSite1,
+            description: "Portfolio / Resume Site"
+        },
+        {
+            title: "This Site",
+            imageUrl: portfolioSite2,
+            description: "Portfolio / Resume Site"
+        },
+        {
+            title: "This Site",
+            imageUrl: portfolioSite3,
+            description: "Portfolio / Resume Site"
+        }
+    ];
 
     const currentProjectsSlides = [
         {
@@ -26,11 +99,6 @@ function App() {
             title: "Kierkegaard's Corner",
             imageUrl: philosophySite,
             description: "Using pop culture to break down modern philosophy"
-        },
-        {
-            title: "This site",
-            imageUrl: myResumeSite,
-            description: "Updating this thing"
         }
     ];
     const projectsSlides = [
@@ -42,7 +110,7 @@ function App() {
         {
             title: "Kill Bill X Jujutsu Kaisen",
             imageUrl: jjkKillBill,
-            description: "A little personal project of mine"
+            description: "A little personal project"
         }
     ];
   return (
@@ -177,15 +245,44 @@ function App() {
                 </p>
             </div>
         </div>
+
+        <div className="grid-spacer"></div>
+
         <div className="placeholder-box">
             <div className="section-headers-box">
-                <h2 className="resume-h2">In-Progress Projects:</h2>
+                <h2 className="resume-h2">Brainstorming App</h2>
+            </div>
+            <LightboxSlideshow slides={brainstormApp}/>
+            <div className="design-link-box">
+                <a className="design-link" target="_blank" href="https://www.figma.com/design/DQQ8CS6ZRvjQhxKRQeSnYW/Individual-Final-Project?node-id=8031-874&t=voZqgXFfkOF7fFNf-1">Figma</a>
+                <a className="design-link" target="_blank" href="https://drive.google.com/drive/folders/1ye_SWJhh5LuZxtIc86f8mLwwa1YiRSOj?usp=sharing">Process PDFs (Google Drive)</a>
+            </div>
+        </div>
+        <div className="placeholder-box">
+            <div className="section-headers-box">
+                <h2 className="resume-h2">Canvas App Redesign</h2>
+            </div>
+            <LightboxSlideshow slides={canvasRedesign}/>
+            <div className="design-link-box">
+                <a className="design-link" target="_blank" href="https://www.figma.com/design/sQPwpzDFOhPzNK5rXEBvUx/Canvas-Messaging-Redesign?node-id=0-1&p=f&t=5nxrKBX1j4pUz1IT-0">Figma</a>
+                <a className="design-link" target="_blank" href="https://drive.google.com/drive/folders/1ye_SWJhh5LuZxtIc86f8mLwwa1YiRSOj?usp=sharing">Process PDFs (Google Drive)</a>
+            </div>
+        </div>
+        <div className="placeholder-box">
+            <div className="section-headers-box">
+                <h2 className="resume-h2">Portfolio Site</h2>
+            </div>
+            <LightboxSlideshow slides={portfolioSite}/>
+        </div>
+        <div className="placeholder-box">
+            <div className="section-headers-box">
+                <h2 className="resume-h2">In-Progress Apps:</h2>
             </div>
             <LightboxSlideshow slides={currentProjectsSlides}/>
         </div>
         <div className="placeholder-box">
             <div className="section-headers-box">
-                <h2 className="resume-h2">Recent Projects</h2>
+                <h2 className="resume-h2">Graphic Design Projects</h2>
             </div>
             <LightboxSlideshow slides={projectsSlides}/>
         </div>

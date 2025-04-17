@@ -5,6 +5,8 @@
   --primary-text: #FFFFFF;
   --secondary-text: #A0A0A0;
   --accent: #ff7b54;
+  --accent-rgb: 255, 123, 84;
+  --accent-15: rgba(var(--accent-rgb), 0.15);
   --background: #000000;
   --background-secondary: #121212;
   --surface: #1E1E1E;
@@ -97,6 +99,11 @@ h2 {
   color: var(--secondary-text);
 }
 
+.project-h2 {
+   font-weight: 300;
+  color: var(--primary-text);
+}
+
 h3 {
 /*Display */
   display: flex;
@@ -140,6 +147,40 @@ p {
   color: var(--secondary-text);
 }
 
+.design-link-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.design-link {
+/*Display */
+  display: block;
+  /*Box model */
+  margin: 0;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 5px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  /* background-color: var(--surface-secondary); */
+  /*Typography */
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+  color: var(--accent);
+  text-decoration: underline;
+}
+.design-link:hover {
+  cursor: pointer;
+  background-color: var(--accent-15);
+  border-color: var(--accent-15);
+}
+.design-link:active {
+  border-color: var(--accent);
+}
+
 /* --------------- Containers --------------- */
 
 /* html */
@@ -164,6 +205,7 @@ body {
 /*Box model */
   max-width: 1400px;
   min-width: 400px;
+  min-height: 500px;
   padding: 15px;
   background: linear-gradient(to top, var(--background), var(--background-secondary));
 /*Misc*/
@@ -229,20 +271,22 @@ body {
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: 1fr;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 /*Box model */
   margin-bottom: 20px;
 /*Misc*/
   grid-column-gap: 10px;
   grid-row-gap: 10px;
   grid-template-rows: auto auto auto auto auto;
+  /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; */
 }
 /* ----| resume-box */
 .resume-box {
 /*Display */
   display: flex;
   flex-flow: column;
-  grid-row: span 5;
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 2;
   align-items: center;
   justify-content: space-between;
 /*Box model */
@@ -254,7 +298,11 @@ body {
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   box-shadow: 2px 2px 1px #0000004d;
-}  
+}
+.grid-spacer {
+  grid-column: 1 / span 3;
+  grid-row: 10 / span 1;
+}
 /* -----| resume-headers-box */
 .resume-headers-box {
 /*Display */
@@ -328,16 +376,15 @@ body {
 /*Display */
   display: flex;
   flex-direction: column;
-  grid-row: span 1;
   align-items: center;
   justify-content: center;
-  /* grid-row: span 1; */
 /*Box model */
   min-width: 340px;
   padding: 15px;
   border: 1px solid var(--border);
   border-radius: 15px;
   /* Misc */
+  grid-column: 1 / span 2;
   grid-row: span 1;
 }
 /* --| expanded-cards-section */
@@ -360,7 +407,7 @@ body {
       color: var(--secondary-text);
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1420px) {
   body {
     min-width: 525px;
   }
@@ -368,8 +415,8 @@ body {
       display: grid;
       grid-column-gap: 10px;
       grid-row-gap: 10px;
-      grid-template-rows: auto auto auto auto auto auto auto;
-      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
+      grid-template-columns: 1fr 1fr 1fr;
       margin-bottom: 20px;
   }
     .resume-box {
@@ -377,7 +424,8 @@ body {
       flex-flow: column;
       justify-content: space-between;
       align-items: center;
-      grid-row: 1;
+      grid-row: 9 / span 1;
+      grid-column: 1 / span 3;
       grid-column-gap: 0px;
       grid-row-gap: 0px;
       min-width: 340px;
@@ -385,14 +433,24 @@ body {
       border-radius: 15px;
       padding: 15px;
       box-shadow: 2px 2px 1px #0000004d;
+    }
+    .grid-spacer {
 
+    }
+
+    .placeholder-box {
+      grid-row: span 1;
+      grid-column: 1 / span 3;
     }
 }
 
 @media screen and (max-width: 885px) {
   .heading-box {
-    align-items: flex-start;
-    margin-left: 30px;
+    /* align-items: flex-start; */
+    /* margin-left: 30px; */
+  }
+  h1 {
+    text-align: center;
   }
   .desktop-h1 {
     display: none;
@@ -402,7 +460,7 @@ body {
   }
   .main-grid-section {
     /*Misc*/
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
   }
 }

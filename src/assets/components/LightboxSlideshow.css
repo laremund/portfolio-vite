@@ -10,6 +10,8 @@
 /*Box Model*/
     width: 100%;
     border-radius: 0.5rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
 /*Misc*/
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
@@ -34,6 +36,9 @@
 /* Content area */
 .lightbox-content {
     width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     /* position: inherit; */
 }
 
@@ -49,16 +54,23 @@
     justify-content: center;
     /* align-items: center; */
 /*Box Model*/
-    max-width: 400px;
-    min-width: 340px;
-    height: 340px;
+    width: 100%;
+    height: 100%;
+    /* height: 340px; */
     margin-bottom: 1rem;
 }
 
 /* Image styling */
 .lightbox-image {
 /*Box Model*/
-    width: min-content;
+    width: 60%;
+    object-fit: contain;
+    /* height: fit-content; */
+    max-height: 1000px;
+    /* max-width: 80%;
+    max-height: 500px; */
+    /* min-width: 340px;
+    min-height: 240px; */
     /* border: 1px solid transparent; */
     border-radius: 15px;
 /*Misc*/
@@ -71,6 +83,9 @@
     justify-content: center;
     align-items: center;
     padding: 5px;
+    width: fit-content;
+    font-family: 'Open Sans', sans-serif;
+    /* font-size: 17px; */
 }
 
 /* Left navigation */
@@ -78,6 +93,8 @@
 /*Display*/
     display: flex;
     align-items: center;
+/*Box Model*/
+    padding-bottom: 50px;
 /*Positioning*/
     position: absolute;
     left: 0;
@@ -91,6 +108,8 @@
 /*Display*/
     display: flex;
     align-items: center;
+/*Box Model*/
+padding-bottom: 50px;
 /*Positioning*/
     position: absolute;
     right: 0;
